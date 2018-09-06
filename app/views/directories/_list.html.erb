@@ -1,0 +1,28 @@
+<div id="filterrific_results">
+  <div class="row mx-5">
+    <% companies.each do |c| %>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="media mb-5">
+                <div class="media-left">
+                    <a href="#">
+                        <img src="<%=c.logo_url %>" class="img-fluid", style="float:left; max-width: 30px; max-height: 100px">
+                    </a>
+                </div>
+                <div class="media-body">
+                <h5 class="media-heading mb-3"><%= link_to(
+                    c.name,
+                    company_path(c.id),
+                ) %>
+                </h5>
+            
+                <p><%= c.number_employees %> employees</p>
+                </div>
+            </div> 
+        </div>
+    <% end %>      
+  </div>
+  <div class="row justify-content-center">
+        <%= will_paginate companies%>
+  </div>
+</div>
+
