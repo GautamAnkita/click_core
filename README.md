@@ -26,7 +26,7 @@ Users will need to have Rails installed on their machine.
 
 ### Contributors
 
-Ankita Gautam: Maps API Integration, Meetup API Integration, 'Company' & 'Directories' pages
+Ankita Gautam: Google Map API Integration, Meetup API Integration, 'Company' & 'Directories' pages with Search & Filter functionalities
 
 Juliana Martins: Events Calendar API Integration, logo & website design, clean up and
 debugging views
